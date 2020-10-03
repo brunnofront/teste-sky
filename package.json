@@ -1,0 +1,32 @@
+{
+  "name": "teste-sky",
+  "version": "0.0.1",
+  "description": "Teste de codificação e reprodução de layout para Sky",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "build": "npm run webpack -- --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunnofront/teste-sky.git"
+  },
+  "author": "Brunno Vianna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunnofront/teste-sky/issues"
+  },
+  "homepage": "https://github.com/brunnofront/teste-sky#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "swiper": "^5.4.5"
+  },
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}

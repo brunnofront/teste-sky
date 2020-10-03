@@ -1,0 +1,35 @@
+footer {
+    background-color: var(--medium-light);
+    
+    .footer-content-wrapper {
+        & > div {
+            padding: 1rem;
+            border-top: 1px solid #d1d2da;
+
+        }
+    }
+    .logo {
+        display: block;
+        max-width: 80px;
+        width: 100%;
+    }
+
+    .footer-bar {
+        display: flex;
+        justify-content: space-between;
+        .social-media-wrapper {
+            display: flex;
+            i {
+                font-size: 1.5rem;
+                flex: 1 1;
+                &.icon-instagram {
+                    color: #999; 
+                }
+            }
+            i:not(.icon-instagram) {
+                color: var(--medium-light);
+                text-shadow: -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
+            }
+        }
+    }
+}

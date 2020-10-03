@@ -1,0 +1,32 @@
+:root {
+    --padding-from-lateral-small: 1.2rem;
+    --padding-from-lateral-medium: 1rem;
+    --padding-from-lateral-large: 1.3rem;
+}
+body {
+    background-color: var(--light);
+}
+#app {
+    font-size: 14px;
+}
+
+.main-content {
+    padding: 0.5rem 0;
+}
+
+// Limita a largura dos conteúdos (que não devam expadir totalmente
+.scontainer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    
+    @include media-breakpoint-up(md) {
+        max-width: 2130px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

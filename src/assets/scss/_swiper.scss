@@ -1,0 +1,111 @@
+.carousel-section {
+
+    .swiper-container {
+        padding-bottom: 20px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+
+        background: rgba(0,0,0,0.7);
+        border-radius: 100%;
+        width: 90px;
+        height: 90px;
+        &:after {
+            color: #fff;
+            font-family: "fontello";
+            font-size: 1.4rem;
+        }
+    }
+
+    .swiper-button-prev:after {
+        content: "\e802";
+    }
+    .swiper-button-next:after {
+        content: "\e803";  
+    }
+
+    &:not(#highlights) {
+        
+        .swiper-button-prev {
+            justify-content: flex-end;
+            transform: translate(-50px, -50%);
+            &:after {
+                padding-right: 30px;
+            }
+        }
+        
+        .swiper-button-next {
+            justify-content: flex-start;
+            transform: translate(50px, -50%);
+            &:after {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    &#highlights {
+        .swiper-button-prev, .swiper-button-next {
+            height: 50px;
+            width: 50px;
+        }
+
+        .swiper-button-prev:after {
+            content: "\e800";
+        }
+        .swiper-button-next:after {
+            content: "\e801";
+        }
+    }
+    
+}
+.swiper-slide {
+    height: auto;
+    
+    div {
+        width: 100%;
+        img {
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 5px 9px -6px #666;
+        }
+    }
+}
+
+#highlights {
+
+    .swiper-container {
+        padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+
+        &:not(.swiper-slide-active){
+            @include media-breakpoint-up(md) {
+                img {
+                    width: 90%;
+                    height: auto;
+                    margin: 0 auto;
+                    transform: translate(0, 6%);
+                }
+            }
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px;
+        border-radius: 50px;
+        height: 5px;
+
+        &.swiper-pagination-bullet-active {
+            background-color: var(--red-sky);
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .swiper-button-prev, .swiper-button-next {
+        display: none !important;
+    }
+}

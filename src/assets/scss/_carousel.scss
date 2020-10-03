@@ -1,0 +1,14 @@
+@import "swiper";
+
+.carousel-section {
+    h2 {
+        font-size: 1rem;
+        font-weight: bold;
+        padding-left: var(--padding-from-lateral-small);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include media-breakpoint-up(md) {
+            padding-left: 50px;
+        }
+    }
+}
